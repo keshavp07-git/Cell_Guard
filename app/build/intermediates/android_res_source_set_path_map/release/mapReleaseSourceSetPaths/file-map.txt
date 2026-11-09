@@ -1,0 +1,8 @@
+com.cellguard.app-pngs-0 D:\Android\Cell_Guard\app\build\generated\res\pngs\release
+com.cellguard.app-updated_navigation_xml-1 D:\Android\Cell_Guard\app\build\generated\updated_navigation_xml\release
+com.cellguard.app-packageReleaseResources-2 D:\Android\Cell_Guard\app\build\intermediates\incremental\release\packageReleaseResources\merged.dir
+com.cellguard.app-packageReleaseResources-3 D:\Android\Cell_Guard\app\build\intermediates\incremental\release\packageReleaseResources\stripped.dir
+com.cellguard.app-release-4 D:\Android\Cell_Guard\app\build\intermediates\merged_res\release\mergeReleaseResources
+com.cellguard.app-main-5 D:\Android\Cell_Guard\app\src\main\res
+com.cellguard.app-release-6 D:\Android\Cell_Guard\app\src\release\res
+gradleHome-0 C:\Users\Keshav\.gradle

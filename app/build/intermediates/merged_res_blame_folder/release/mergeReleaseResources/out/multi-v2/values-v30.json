@@ -1,0 +1,19 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.cellguard.app-mergeReleaseResources-54:/values-v30/values-v30.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\Keshav\\.gradle\\caches\\9.6.0\\transforms\\3f7fdc967f3b5e34351b11b5fc861a66\\transformed\\material3-release\\res\\values-v30\\values-v30.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "72",
+                        "endOffsets": "123"
+                    }
+                }
+            ]
+        }
+    ]
+}

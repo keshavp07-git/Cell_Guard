@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.cellguard.app.SmartInsightEngineTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2026-11-09T12:10:45.235Z" hostname="DESKTOP-Q16HLEI" time="0.018">
+  <properties/>
+  <testcase name="generateInsights_slowChargingSession_triggersSlowChargeInsight" classname="com.cellguard.app.SmartInsightEngineTest" time="0.01"/>
+  <testcase name="generateInsights_calibrationNeeded_triggersTip" classname="com.cellguard.app.SmartInsightEngineTest" time="0.002"/>
+  <testcase name="generateInsights_criticalTemperature_triggersHighHeatAlert" classname="com.cellguard.app.SmartInsightEngineTest" time="0.006"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

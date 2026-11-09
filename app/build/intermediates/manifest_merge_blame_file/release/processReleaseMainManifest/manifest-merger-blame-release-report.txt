@@ -1,0 +1,176 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.cellguard.app"
+4    android:versionCode="1"
+5    android:versionName="1.0.0" >
+6
+7    <uses-sdk
+7-->INJECTED
+8        android:minSdkVersion="29"
+8-->INJECTED
+9        android:targetSdkVersion="36" />
+9-->INJECTED
+10
+11    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+11-->D:\Android\Cell_Guard\app\src\main\AndroidManifest.xml:4:5-77
+11-->D:\Android\Cell_Guard\app\src\main\AndroidManifest.xml:4:22-74
+12    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+12-->D:\Android\Cell_Guard\app\src\main\AndroidManifest.xml:5:5-81
+12-->D:\Android\Cell_Guard\app\src\main\AndroidManifest.xml:5:22-78
+13
+14    <permission
+14-->[androidx.core:core:1.15.0] C:\Users\Keshav\.gradle\caches\9.6.0\transforms\ab1e3ffb44102787316e147b7fdf2dc7\transformed\core-1.15.0\AndroidManifest.xml:22:5-24:47
+15        android:name="com.cellguard.app.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+15-->[androidx.core:core:1.15.0] C:\Users\Keshav\.gradle\caches\9.6.0\transforms\ab1e3ffb44102787316e147b7fdf2dc7\transformed\core-1.15.0\AndroidManifest.xml:23:9-81
+16        android:protectionLevel="signature" />
+16-->[androidx.core:core:1.15.0] C:\Users\Keshav\.gradle\caches\9.6.0\transforms\ab1e3ffb44102787316e147b7fdf2dc7\transformed\core-1.15.0\AndroidManifest.xml:24:9-44
+17
+18    <uses-permission android:name="com.cellguard.app.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+18-->[androidx.core:core:1.15.0] C:\Users\Keshav\.gradle\caches\9.6.0\transforms\ab1e3ffb44102787316e147b7fdf2dc7\transformed\core-1.15.0\AndroidManifest.xml:26:5-97
+18-->[androidx.core:core:1.15.0] C:\Users\Keshav\.gradle\caches\9.6.0\transforms\ab1e3ffb44102787316e147b7fdf2dc7\transformed\core-1.15.0\AndroidManifest.xml:26:22-94
+19
+20    <application
+20-->D:\Android\Cell_Guard\app\src\main\AndroidManifest.xml:7:5-39:19
+21        android:name="com.cellguard.app.CellGuardApplication"
+21-->D:\Android\Cell_Guard\app\src\main\AndroidManifest.xml:8:9-45
+22        android:allowBackup="false"
+22-->D:\Android\Cell_Guard\app\src\main\AndroidManifest.xml:9:9-36
+23        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+23-->[androidx.core:core:1.15.0] C:\Users\Keshav\.gradle\caches\9.6.0\transforms\ab1e3ffb44102787316e147b7fdf2dc7\transformed\core-1.15.0\AndroidManifest.xml:28:18-86
+24        android:extractNativeLibs="false"
+24-->INJECTED
+25        android:icon="@mipmap/ic_launcher"
+25-->D:\Android\Cell_Guard\app\src\main\AndroidManifest.xml:10:9-43
+26        android:label="@string/app_name"
+26-->D:\Android\Cell_Guard\app\src\main\AndroidManifest.xml:11:9-41
+27        android:roundIcon="@mipmap/ic_launcher_round"
+27-->D:\Android\Cell_Guard\app\src\main\AndroidManifest.xml:12:9-54
+28        android:supportsRtl="true"
+28-->D:\Android\Cell_Guard\app\src\main\AndroidManifest.xml:13:9-35
+29        android:theme="@android:style/Theme.Material.NoActionBar" >
+29-->D:\Android\Cell_Guard\app\src\main\AndroidManifest.xml:14:9-66
+30        <activity
+30-->D:\Android\Cell_Guard\app\src\main\AndroidManifest.xml:16:9-25:20
+31            android:name="com.cellguard.app.MainActivity"
+31-->D:\Android\Cell_Guard\app\src\main\AndroidManifest.xml:17:13-41
+32            android:configChanges="orientation|screenSize|screenLayout|keyboardHidden"
+32-->D:\Android\Cell_Guard\app\src\main\AndroidManifest.xml:19:13-87
+33            android:exported="true"
+33-->D:\Android\Cell_Guard\app\src\main\AndroidManifest.xml:18:13-36
+34            android:windowSoftInputMode="adjustResize" >
+34-->D:\Android\Cell_Guard\app\src\main\AndroidManifest.xml:20:13-55
+35            <intent-filter>
+35-->D:\Android\Cell_Guard\app\src\main\AndroidManifest.xml:21:13-24:29
+36                <action android:name="android.intent.action.MAIN" />
+36-->D:\Android\Cell_Guard\app\src\main\AndroidManifest.xml:22:17-69
+36-->D:\Android\Cell_Guard\app\src\main\AndroidManifest.xml:22:25-66
+37
+38                <category android:name="android.intent.category.LAUNCHER" />
+38-->D:\Android\Cell_Guard\app\src\main\AndroidManifest.xml:23:17-77
+38-->D:\Android\Cell_Guard\app\src\main\AndroidManifest.xml:23:27-74
+39            </intent-filter>
+40        </activity>
+41
+42        <receiver
+42-->D:\Android\Cell_Guard\app\src\main\AndroidManifest.xml:27:9-37:20
+43            android:name="com.cellguard.app.service.monitoring.BatteryBroadcastReceiver"
+43-->D:\Android\Cell_Guard\app\src\main\AndroidManifest.xml:28:13-72
+44            android:exported="false" >
+44-->D:\Android\Cell_Guard\app\src\main\AndroidManifest.xml:29:13-37
+45            <intent-filter>
+45-->D:\Android\Cell_Guard\app\src\main\AndroidManifest.xml:30:13-36:29
+46                <action android:name="android.intent.action.ACTION_POWER_CONNECTED" />
+46-->D:\Android\Cell_Guard\app\src\main\AndroidManifest.xml:31:17-87
+46-->D:\Android\Cell_Guard\app\src\main\AndroidManifest.xml:31:25-84
+47                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED" />
+47-->D:\Android\Cell_Guard\app\src\main\AndroidManifest.xml:32:17-90
+47-->D:\Android\Cell_Guard\app\src\main\AndroidManifest.xml:32:25-87
+48                <action android:name="android.intent.action.BATTERY_LOW" />
+48-->D:\Android\Cell_Guard\app\src\main\AndroidManifest.xml:33:17-76
+48-->D:\Android\Cell_Guard\app\src\main\AndroidManifest.xml:33:25-73
+49                <action android:name="android.intent.action.BATTERY_OKAY" />
+49-->D:\Android\Cell_Guard\app\src\main\AndroidManifest.xml:34:17-77
+49-->D:\Android\Cell_Guard\app\src\main\AndroidManifest.xml:34:25-74
+50                <action android:name="android.intent.action.BOOT_COMPLETED" />
+50-->D:\Android\Cell_Guard\app\src\main\AndroidManifest.xml:35:17-79
+50-->D:\Android\Cell_Guard\app\src\main\AndroidManifest.xml:35:25-76
+51            </intent-filter>
+52        </receiver>
+53
+54        <provider
+54-->[androidx.emoji2:emoji2:1.3.0] C:\Users\Keshav\.gradle\caches\9.6.0\transforms\84a5d5c9d82fd73f8143cd5efa333311\transformed\emoji2-1.3.0\AndroidManifest.xml:24:9-32:20
+55            android:name="androidx.startup.InitializationProvider"
+55-->[androidx.emoji2:emoji2:1.3.0] C:\Users\Keshav\.gradle\caches\9.6.0\transforms\84a5d5c9d82fd73f8143cd5efa333311\transformed\emoji2-1.3.0\AndroidManifest.xml:25:13-67
+56            android:authorities="com.cellguard.app.androidx-startup"
+56-->[androidx.emoji2:emoji2:1.3.0] C:\Users\Keshav\.gradle\caches\9.6.0\transforms\84a5d5c9d82fd73f8143cd5efa333311\transformed\emoji2-1.3.0\AndroidManifest.xml:26:13-68
+57            android:exported="false" >
+57-->[androidx.emoji2:emoji2:1.3.0] C:\Users\Keshav\.gradle\caches\9.6.0\transforms\84a5d5c9d82fd73f8143cd5efa333311\transformed\emoji2-1.3.0\AndroidManifest.xml:27:13-37
+58            <meta-data
+58-->[androidx.emoji2:emoji2:1.3.0] C:\Users\Keshav\.gradle\caches\9.6.0\transforms\84a5d5c9d82fd73f8143cd5efa333311\transformed\emoji2-1.3.0\AndroidManifest.xml:29:13-31:52
+59                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+59-->[androidx.emoji2:emoji2:1.3.0] C:\Users\Keshav\.gradle\caches\9.6.0\transforms\84a5d5c9d82fd73f8143cd5efa333311\transformed\emoji2-1.3.0\AndroidManifest.xml:30:17-75
+60                android:value="androidx.startup" />
+60-->[androidx.emoji2:emoji2:1.3.0] C:\Users\Keshav\.gradle\caches\9.6.0\transforms\84a5d5c9d82fd73f8143cd5efa333311\transformed\emoji2-1.3.0\AndroidManifest.xml:31:17-49
+61            <meta-data
+61-->[androidx.lifecycle:lifecycle-process:2.8.7] C:\Users\Keshav\.gradle\caches\9.6.0\transforms\70cfc4dab6142ad922e1334bbf9346ea\transformed\lifecycle-process-2.8.7\AndroidManifest.xml:29:13-31:52
+62                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+62-->[androidx.lifecycle:lifecycle-process:2.8.7] C:\Users\Keshav\.gradle\caches\9.6.0\transforms\70cfc4dab6142ad922e1334bbf9346ea\transformed\lifecycle-process-2.8.7\AndroidManifest.xml:30:17-78
+63                android:value="androidx.startup" />
+63-->[androidx.lifecycle:lifecycle-process:2.8.7] C:\Users\Keshav\.gradle\caches\9.6.0\transforms\70cfc4dab6142ad922e1334bbf9346ea\transformed\lifecycle-process-2.8.7\AndroidManifest.xml:31:17-49
+64            <meta-data
+64-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Keshav\.gradle\caches\9.6.0\transforms\a144e3faa377e56b7d8dff9a9fbef05f\transformed\profileinstaller-1.3.1\AndroidManifest.xml:29:13-31:52
+65                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+65-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Keshav\.gradle\caches\9.6.0\transforms\a144e3faa377e56b7d8dff9a9fbef05f\transformed\profileinstaller-1.3.1\AndroidManifest.xml:30:17-85
+66                android:value="androidx.startup" />
+66-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Keshav\.gradle\caches\9.6.0\transforms\a144e3faa377e56b7d8dff9a9fbef05f\transformed\profileinstaller-1.3.1\AndroidManifest.xml:31:17-49
+67        </provider>
+68
+69        <service
+69-->[androidx.room:room-runtime-android:2.7.2] C:\Users\Keshav\.gradle\caches\9.6.0\transforms\bc4818ecd83fd10427ffe7e89a04c324\transformed\room-runtime-release\AndroidManifest.xml:24:9-28:63
+70            android:name="androidx.room.MultiInstanceInvalidationService"
+70-->[androidx.room:room-runtime-android:2.7.2] C:\Users\Keshav\.gradle\caches\9.6.0\transforms\bc4818ecd83fd10427ffe7e89a04c324\transformed\room-runtime-release\AndroidManifest.xml:25:13-74
+71            android:directBootAware="true"
+71-->[androidx.room:room-runtime-android:2.7.2] C:\Users\Keshav\.gradle\caches\9.6.0\transforms\bc4818ecd83fd10427ffe7e89a04c324\transformed\room-runtime-release\AndroidManifest.xml:26:13-43
+72            android:exported="false" />
+72-->[androidx.room:room-runtime-android:2.7.2] C:\Users\Keshav\.gradle\caches\9.6.0\transforms\bc4818ecd83fd10427ffe7e89a04c324\transformed\room-runtime-release\AndroidManifest.xml:27:13-37
+73
+74        <receiver
+74-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Keshav\.gradle\caches\9.6.0\transforms\a144e3faa377e56b7d8dff9a9fbef05f\transformed\profileinstaller-1.3.1\AndroidManifest.xml:34:9-52:20
+75            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+75-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Keshav\.gradle\caches\9.6.0\transforms\a144e3faa377e56b7d8dff9a9fbef05f\transformed\profileinstaller-1.3.1\AndroidManifest.xml:35:13-76
+76            android:directBootAware="false"
+76-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Keshav\.gradle\caches\9.6.0\transforms\a144e3faa377e56b7d8dff9a9fbef05f\transformed\profileinstaller-1.3.1\AndroidManifest.xml:36:13-44
+77            android:enabled="true"
+77-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Keshav\.gradle\caches\9.6.0\transforms\a144e3faa377e56b7d8dff9a9fbef05f\transformed\profileinstaller-1.3.1\AndroidManifest.xml:37:13-35
+78            android:exported="true"
+78-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Keshav\.gradle\caches\9.6.0\transforms\a144e3faa377e56b7d8dff9a9fbef05f\transformed\profileinstaller-1.3.1\AndroidManifest.xml:38:13-36
+79            android:permission="android.permission.DUMP" >
+79-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Keshav\.gradle\caches\9.6.0\transforms\a144e3faa377e56b7d8dff9a9fbef05f\transformed\profileinstaller-1.3.1\AndroidManifest.xml:39:13-57
+80            <intent-filter>
+80-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Keshav\.gradle\caches\9.6.0\transforms\a144e3faa377e56b7d8dff9a9fbef05f\transformed\profileinstaller-1.3.1\AndroidManifest.xml:40:13-42:29
+81                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+81-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Keshav\.gradle\caches\9.6.0\transforms\a144e3faa377e56b7d8dff9a9fbef05f\transformed\profileinstaller-1.3.1\AndroidManifest.xml:41:17-91
+81-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Keshav\.gradle\caches\9.6.0\transforms\a144e3faa377e56b7d8dff9a9fbef05f\transformed\profileinstaller-1.3.1\AndroidManifest.xml:41:25-88
+82            </intent-filter>
+83            <intent-filter>
+83-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Keshav\.gradle\caches\9.6.0\transforms\a144e3faa377e56b7d8dff9a9fbef05f\transformed\profileinstaller-1.3.1\AndroidManifest.xml:43:13-45:29
+84                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+84-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Keshav\.gradle\caches\9.6.0\transforms\a144e3faa377e56b7d8dff9a9fbef05f\transformed\profileinstaller-1.3.1\AndroidManifest.xml:44:17-85
+84-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Keshav\.gradle\caches\9.6.0\transforms\a144e3faa377e56b7d8dff9a9fbef05f\transformed\profileinstaller-1.3.1\AndroidManifest.xml:44:25-82
+85            </intent-filter>
+86            <intent-filter>
+86-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Keshav\.gradle\caches\9.6.0\transforms\a144e3faa377e56b7d8dff9a9fbef05f\transformed\profileinstaller-1.3.1\AndroidManifest.xml:46:13-48:29
+87                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+87-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Keshav\.gradle\caches\9.6.0\transforms\a144e3faa377e56b7d8dff9a9fbef05f\transformed\profileinstaller-1.3.1\AndroidManifest.xml:47:17-88
+87-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Keshav\.gradle\caches\9.6.0\transforms\a144e3faa377e56b7d8dff9a9fbef05f\transformed\profileinstaller-1.3.1\AndroidManifest.xml:47:25-85
+88            </intent-filter>
+89            <intent-filter>
+89-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Keshav\.gradle\caches\9.6.0\transforms\a144e3faa377e56b7d8dff9a9fbef05f\transformed\profileinstaller-1.3.1\AndroidManifest.xml:49:13-51:29
+90                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+90-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Keshav\.gradle\caches\9.6.0\transforms\a144e3faa377e56b7d8dff9a9fbef05f\transformed\profileinstaller-1.3.1\AndroidManifest.xml:50:17-95
+90-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Keshav\.gradle\caches\9.6.0\transforms\a144e3faa377e56b7d8dff9a9fbef05f\transformed\profileinstaller-1.3.1\AndroidManifest.xml:50:25-92
+91            </intent-filter>
+92        </receiver>
+93    </application>
+94
+95</manifest>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.cellguard.app.BatteryHealthEstimatorTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2026-11-09T12:10:45.175Z" hostname="DESKTOP-Q16HLEI" time="0.045">
+  <properties/>
+  <testcase name="computeHealthEstimate_missingDesignCapacity_returnsInsufficientData" classname="com.cellguard.app.BatteryHealthEstimatorTest" time="0.025"/>
+  <testcase name="estimateSessionCapacity_validSession_calculatesCorrectly" classname="com.cellguard.app.BatteryHealthEstimatorTest" time="0.001"/>
+  <testcase name="computeHealthEstimate_degradedBattery_classifiesCorrectly" classname="com.cellguard.app.BatteryHealthEstimatorTest" time="0.008"/>
+  <testcase name="estimateSessionCapacity_counterReset_rejected" classname="com.cellguard.app.BatteryHealthEstimatorTest" time="0.001"/>
+  <testcase name="computeHealthEstimate_fewerThanThreeSessions_returnsInsufficientData" classname="com.cellguard.app.BatteryHealthEstimatorTest" time="0.001"/>
+  <testcase name="estimateSessionCapacity_shortSession_rejectedAsInsufficientDelta" classname="com.cellguard.app.BatteryHealthEstimatorTest" time="0.0"/>
+  <testcase name="computeHealthEstimate_consistentSessions_calculatesHighHealthAndConfidence" classname="com.cellguard.app.BatteryHealthEstimatorTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
